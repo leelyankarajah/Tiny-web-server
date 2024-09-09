@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Viewer</title>
+</head>
+<body>
+    <h2>Image Viewer</h2>
+    <form id="imageForm" action="#" method="get">
+        <label for="imageName">Enter Image Name:</label><br>
+        <input type="text" id="imageName" name="imageName"><br><br>
+        <input type="submit" value="View Image">
+    </form>
+    <div id="imageContainer"></div>
+
+    <script>
+        document.getElementById("imageForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            var imageName = document.getElementById("imageName").value.trim(); // Get the image name from the input field
+
+            // Create an img element and set its src attribute to display the image
+            var image = document.createElement("img");
+            image.src = imageName;
+            image.alt = "Image";
+
+            // Clear previous image (if any) and append the new image to the image container
+            var imageContainer = document.getElementById("imageContainer");
+            imageContainer.innerHTML = ""; // Clear previous content
+            imageContainer.appendChild(image);
+        });
+    </script>
+</body>
+</html>

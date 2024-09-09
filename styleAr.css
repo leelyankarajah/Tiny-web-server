@@ -1,0 +1,190 @@
+/* some generized features in the body */
+body {
+    background-image: url(sky.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+
+/* using flex we can alligen more than one box next to each other */
+#box-container {
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+}
+/* created a class to put the common features of all used rounded images*/
+.rounded-image {
+    border-radius: 15px;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    margin-top: 100px;
+    background-size: cover;
+}
+/* using flex we can alligen more than one box next to each other */
+
+#boxinfo-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-info {
+    padding: 10px;
+    border: 5px solid;
+    width: 30%;
+    font-size: 18px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    overflow: hidden;
+}
+/* we used some featues to male are web page look nicer and more orgnaized */
+
+#box4 {
+     font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    margin: 20px auto;
+    border: 0px ;
+    width: 80%;
+    font-size: 22px;
+    color: black;
+
+    padding: 10px;
+    background-image: url(teddy.png);
+    background-size: cover;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 150px;
+        font-weight: bold;
+
+}
+
+/* insted of repeating same features we used the three classes togather */
+ #box2, #box3 {
+    border: 5px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 22px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.highlight-text {
+    color: rgb(201, 182, 182);
+}
+/* specify the backgroung image and margines for each box */
+
+
+#box2 {
+    margin-left: 250px;
+    background-image: url(leelyan.jpg);
+    background-size: cover;
+}
+
+#box3 {
+    margin-right: 10px;
+    margin-left: 500px;
+    background-image: url(Dareen.jpg);
+    background-size: cover;
+}
+/* insted of repeating same features we used the three classes togather */
+
+#boxinfo1, #boxinfo3 {
+     font-family: "Times New Roman", Times, serif;
+    padding: 10px;
+    border: 5px solid;
+    width: 30%;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    overflow: hidden;
+}
+/* to oronize the lists we made*/
+ul, ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0px;
+}
+/* insted of repeating same features we used the three classes togather */
+
+#boxinfo1 {
+    font-style: italic;
+    border-color: rgb(201, 182, 182);
+    background-color: rgb(201, 182, 182);
+    margin-left: 150px;
+    color: black;
+}
+
+
+#boxinfo3 {
+    font-style: italic;
+    border-color: rgb(201, 182, 182);
+    background-color: rgb(201, 182, 182);
+    margin-right: 300px;
+    color: black;
+}
+/* insted of repeating same features we used the main class button */
+
+button {
+    font-size: 30px;
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    padding: 8px;
+    border-radius: 10px; /* Adjust the border-radius as needed */
+    color: rgb(25,25,112);
+    align-self: center;
+
+}
+#button1{
+    margin-left: 700px;
+
+}
+#button2{
+    margin-left: 680px;
+
+}
+#box0{
+    font-family:'fantasy',Papyrus;
+    margin-top: 150px;
+    margin-left: 10px;
+    margin-right: 20px;
+    border : 0px  ;
+    width : 500px ;
+    height : 200px;
+    font-size: 50px;
+
+   padding : 30px;
+
+   color:white;
+
+}
+
+#intro{
+    background-image: url(network.png);
+    background-size: cover;
+    width: 550px;
+    height: 550px;
+    margin-left: 10px;
+    margin-right: 250px;
+    margin-top: 100px;
+}
+#intro-container{
+    display: flex;
+
+}

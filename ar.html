@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عارض الصور</title>
+</head>
+<body>
+    <h2>عارض الصور</h2>
+    <form id="imageForm" action="#" method="get">
+        <label for="imageName">ادخل اسم الصورة:</label><br>
+        <input type="text" id="imageName" name="imageName"><br><br>
+        <input type="submit" value="عرض الصورة">
+    </form>
+    <div id="imageContainer"></div>
+
+    <script>
+        document.getElementById("imageForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // منع السلوك الافتراضي لإرسال النموذج
+
+            var imageName = document.getElementById("imageName").value.trim(); // الحصول على اسم الصورة من حقل الإدخال
+
+            // إنشاء عنصر صورة وتعيين سمتها src لعرض الصورة
+            var image = document.createElement("img");
+            image.src = imageName;
+            image.alt = "صورة";
+
+            // مسح الصورة السابقة (إذا كانت موجودة) وإلحاق الصورة الجديدة بحاوية الصورة
+            var imageContainer = document.getElementById("imageContainer");
+            imageContainer.innerHTML = ""; // مسح المحتوى السابق
+            imageContainer.appendChild(image);
+        });
+    </script>
+</body>
+</html>
